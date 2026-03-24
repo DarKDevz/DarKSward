@@ -1,11 +1,11 @@
-import Native from "./libs/Chain/Native";
-import Chain from "./libs/Chain/Chain";
-import Task from "./libs/TaskRop/Task";
-import Thread from "./libs/TaskRop/Thread";
-import TaskRop from "./libs/TaskRop/TaskRop";
-import Logger from "./libs/JSUtils/Logger";
-import Utils from "./libs/JSUtils/Utils";
-import DriverNewThread from "./libs/Driver/DriverNewThread";
+import Native from "libs/Chain/Native";
+import Chain from "libs/Chain/Chain";
+import Task from "libs/TaskRop/Task";
+import Thread from "libs/TaskRop/Thread";
+import TaskRop from "libs/TaskRop/TaskRop";
+import Logger from "libs/JSUtils/Logger";
+import Utils from "libs/JSUtils/Utils";
+import DriverNewThread from "libs/Driver/DriverNewThread";
 
 
 

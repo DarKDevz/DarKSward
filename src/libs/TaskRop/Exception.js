@@ -1,8 +1,8 @@
-import Chain from "./../Chain/Native.js";
-import Utils from "./../JSUtils/Utils.js";
-import ExceptionMessageStruct from "./../TaskRop/ExceptionMessageStruct.js";
-import ExceptionReplyStruct from "./../TaskRop/ExceptionReplyStruct.js";
-import MachMsgHeaderStruct from "./../TaskRop/MachMsgHeaderStruct.js";
+import Chain from "libs/Chain/Native";
+import Utils from "libs/JSUtils/Utils";
+import ExceptionMessageStruct from "./ExceptionMessageStruct";
+import ExceptionReplyStruct from "./ExceptionReplyStruct";
+import MachMsgHeaderStruct from "./MachMsgHeaderStruct";
 
 
 

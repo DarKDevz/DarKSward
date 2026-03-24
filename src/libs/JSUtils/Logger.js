@@ -1,5 +1,5 @@
-import FileUtils from "./../JSUtils/FileUtils.js";
-import Native from "./../Chain/Native.js";
+import FileUtils from "./FileUtils";
+import Native from "../Chain/Native";
 
 
 

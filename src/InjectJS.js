@@ -1,6 +1,6 @@
-import Utils from "./libs/JSUtils/Utils";
-import RemoteCall from "./libs/TaskRop/RemoteCall";
-import Chain from "./libs/Chain/Chain";
+import Utils from "libs/JSUtils/Utils";
+import RemoteCall from "libs/TaskRop/RemoteCall";
+import Chain from "libs/Chain/Chain";
 
 const TAG = "INJECTJS";
 

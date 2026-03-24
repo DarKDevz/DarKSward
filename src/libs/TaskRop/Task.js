@@ -1,7 +1,7 @@
-import SelfTaskStruct from "./SelfTaskStruct.js";
-import Utils from "../JSUtils/Utils.js";
-import Chain from "../Chain/Chain.js";
-import Native from "../Chain/Native.js";
+import SelfTaskStruct from "./SelfTaskStruct";
+import Utils from "libs/JSUtils/Utils";
+import Chain from "libs/Chain/Chain";
+import Native from "libs/Chain/Native";
 
 
 

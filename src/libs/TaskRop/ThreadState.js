@@ -1,4 +1,4 @@
-import RegistersStruct from "./RegistersStruct.js";
+import RegistersStruct from "./RegistersStruct";
 
 export default class ThreadState
 {

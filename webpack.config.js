@@ -5,14 +5,29 @@ const indent = (str, spaces = 2) => str.split('\n').map(line => ' '.repeat(space
 
 module.exports = {
   mode: 'production',
-  entry: './src/main.js',
+  context: path.resolve(__dirname, 'src'),
+  entry: './main.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    iife: true,
+  },
+  resolve: {
+    modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+    extensions: ['.js']
   },
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+            plugins: ['@babel/plugin-proposal-class-properties']
+          }
+        }
+      },
       {
         test: /MigFilterBypassThread\.js$/,
         use: 'raw-loader',
@@ -23,11 +38,11 @@ module.exports = {
     {
       apply: (compiler) => {
         compiler.hooks.emit.tap('WrapPlugin', (compilation) => {
-          const headerSource = fs.readFileSync('./src/header.js', 'utf8');
+          const headerSource = fs.readFileSync(path.resolve(__dirname, 'src/header.js'), 'utf8');
           const asset = compilation.assets['bundle.js'];
           const originalSource = asset.source();
 
-          const wrappedSource = 
+          const wrappedSource =
 `(() => {
 ${indent(headerSource, 2)}
   try {
@@ -36,8 +51,6 @@ ${indent(headerSource, 2)}
       LOG(\`Main function resulted with an error: \${error}\`);
       LOG("stack: " + error.stack);
   } finally {
-      // Post-Exp done.
-      // Exiting the process.
       exit(0n);
   }
 })();`;
@@ -52,6 +65,11 @@ ${indent(headerSource, 2)}
   ],
   optimization: {
     minimize: false,
-    moduleIds: 'named',
+    namedModules: true,
+    namedChunks: true,
+    concatenateModules: false,
+    usedExports: false,
+    providedExports: true,
+    sideEffects: false
   },
 };

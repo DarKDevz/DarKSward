@@ -1,6 +1,6 @@
-import Offsets from "./Offsets.js";
-import Chain from "../Chain/Chain.js";
-import Utils from "../JSUtils/Utils.js";
+import Offsets from "./Offsets";
+import Chain from "libs/Chain/Chain";
+import Utils from "libs/JSUtils/Utils";
 
 
 

@@ -1,9 +1,9 @@
-import FileUtils from "../JSUtils/FileUtils.js";
-import Utils from "../JSUtils/Utils.js";
-import Task from "./Task.js";
-import RemoteCall from "./RemoteCall.js";
-import Chain from "../Chain/Chain.js";
-import Native from "../Chain/Native.js";
+import FileUtils from "libs/JSUtils/FileUtils";
+import Utils from "libs/JSUtils/Utils";
+import Task from "./Task";
+import RemoteCall from "./RemoteCall";
+import Chain from "libs/Chain/Chain";
+import Native from "libs/Chain/Native";
 
 
 

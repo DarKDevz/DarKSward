@@ -1,8 +1,8 @@
-import Native from "../Chain/Native.js";
-import Chain from "../Chain/Chain.js";
-import Utils from "../JSUtils/Utils.js";
-import MachMsgHeaderStruct from "./MachMsgHeaderStruct.js";
-import Task from "./Task.js";
+import Native from "libs/Chain/Native";
+import Chain from "libs/Chain/Chain";
+import Utils from "libs/JSUtils/Utils";
+import MachMsgHeaderStruct from "./MachMsgHeaderStruct";
+import Task from "./Task";
 
 
 

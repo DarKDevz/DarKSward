@@ -1,5 +1,5 @@
-import OffsetsStruct from "../Chain/OffsetsStruct.js";
-import {offsets} from "./OffsetsTable.js";
+import OffsetsStruct from "libs/Chain/OffsetsStruct";
+import {offsets} from "./OffsetsTable";
 
 
 

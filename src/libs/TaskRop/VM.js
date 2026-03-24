@@ -1,11 +1,11 @@
-import Chain from "../Chain/Chain.js";
-import Native from "../Chain/Native.js";
-import Utils from "../JSUtils/Utils.js";
-import {vm_map_links, vm_map_entry} from "./VmMapEntry.js";
-import Task from "./Task.js";
-import VMObject from "./VMObject.js";
-import VMShmem from "./VMShmem.js";
-import VmPackingParams from "./VmPackingParams.js";
+import Chain from "libs/Chain/Chain";
+import Native from "libs/Chain/Native";
+import Utils from "libs/JSUtils/Utils";
+import {vm_map_links, vm_map_entry} from "./VmMapEntry";
+import Task from "./Task";
+import VMObject from "./VMObject";
+import VMShmem from "./VMShmem";
+import VmPackingParams from "./VmPackingParams";
 
 const TAG = "VM";
 const VME_ALIAS_BITS = 12n;

@@ -1,6 +1,6 @@
 import Offsets from "./Offsets";
-import Native from "../Chain/Native";
-import Utils from "../JSUtils/Utils";
+import Native from "libs/Chain/Native";
+import Utils from "libs/JSUtils/Utils";
 
 
 const TAG = "DRIVER-POSTEXPL"

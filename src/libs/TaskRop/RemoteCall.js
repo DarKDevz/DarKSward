@@ -1,16 +1,16 @@
-import Utils from "../JSUtils/Utils.js";
-import Native from "../Chain/Native.js";
-import Chain from "../Chain/Chain.js";
-import Task from "./Task.js";
-import Thread from "./Thread.js";
-import Exception from "./Exception.js";
-import ExceptionMessageStruct from "./ExceptionMessageStruct.js";
-import ThreadState from "./ThreadState.js";
-import PAC from "./PAC.js";
-import VM from "./VM.js";
-import VMShmem from "./VMShmem.js";
-import MachMsgHeaderStruct from "./MachMsgHeaderStruct.js";
-import PortRightInserter from "./PortRightInserter.js";
+import Utils from "libs/JSUtils/Utils";
+import Native from "libs/Chain/Native";
+import Chain from "libs/Chain/Chain";
+import Task from "./Task";
+import Thread from "./Thread";
+import Exception from "./Exception";
+import ExceptionMessageStruct from "./ExceptionMessageStruct";
+import ThreadState from "./ThreadState";
+import PAC from "./PAC";
+import VM from "./VM";
+import VMShmem from "./VMShmem";
+import MachMsgHeaderStruct from "./MachMsgHeaderStruct";
+import PortRightInserter from "./PortRightInserter";
 
 
 

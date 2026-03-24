@@ -1,5 +1,5 @@
-import MachMsgHeaderStruct from "./MachMsgHeaderStruct.js";
-import ThreadState from "./ThreadState.js";
+import MachMsgHeaderStruct from "./MachMsgHeaderStruct";
+import ThreadState from "./ThreadState";
 
 
 export default class ExceptionMessageStruct 
