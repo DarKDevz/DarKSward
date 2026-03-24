@@ -159,7 +159,7 @@ export default class InjectJS {
 		localCallBuff[23] = this.task.pac( Native.callSymbol("dlsym", RTLD_DEFAULT, "malloc"), 0 );
 		localCallBuff[24] = oinv;
 		localCallBuff[25] = jsctx;
-		localCallBuff[26] =  true ? 1n : 0;	// we pass true if DEBUG is set
+		localCallBuff[26] = true ? 1n : 0;	// we pass true if DEBUG is set
 		localCallBuff[27] = 1n;
 		localCallBuff[28] = 0n;
 		localCallBuff[29] = 0n;

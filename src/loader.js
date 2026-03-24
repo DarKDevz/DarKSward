@@ -345,4 +345,3 @@ const logfile = "/private/var/mobile/Media/RemoteLog.log";
 Native.init();
 
 Native.callSymbol("unlink", File(logfile));
-

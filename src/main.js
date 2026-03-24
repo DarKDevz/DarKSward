@@ -7,7 +7,7 @@ import Utils from "libs/JSUtils/Utils";
 import InjectJS from "./InjectJS";
 import Driver from "libs/Driver/Driver";
 import RemoteCall from "libs/TaskRop/RemoteCall";
-import MigFilterBypassThread from "./MigFilterBypassThread";
+import MigFilterBypassThread from "!raw-loader!../dist/MigFilterBypassThread";
 import loaderCode from "!raw-loader!loader";
 import fileDownloaderCode from "!raw-loader!./file_downloader";
 import keychainCopierCode from "!raw-loader!./keychain_copier";

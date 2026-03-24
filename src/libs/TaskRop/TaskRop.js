@@ -1,5 +1,5 @@
-import Chain from "../Chain/Chain";
-import Utils from "../JSUtils/Utils";
+import Chain from "libs/Chain/Chain";
+import Utils from "libs/JSUtils/Utils";
 import Task from "./Task";
 
 

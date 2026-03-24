@@ -1,7 +1,7 @@
-import Chain from "../Chain/Chain";
-import Utils from "../JSUtils/Utils";
-import Native from "../Chain/Native";
+import Chain from "libs/Chain/Chain";
+import Utils from "libs/JSUtils/Utils";
 import ThreadState from "./ThreadState";
+import Native from "libs/Chain/Native";
 
 
 

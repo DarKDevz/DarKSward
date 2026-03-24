@@ -1,5 +1,5 @@
 import FileUtils from "./FileUtils";
-import Native from "../Chain/Native";
+import Native from "libs/Chain/Native";
 
 
 

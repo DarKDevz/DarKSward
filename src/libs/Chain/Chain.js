@@ -1,4 +1,4 @@
-import Utils from "../JSUtils/Utils";
+import Utils from "libs/JSUtils/Utils";
 
 const TAG = "CHAIN"
 
