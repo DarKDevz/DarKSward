@@ -2,7 +2,6 @@ import Chain from "libs/Chain/Chain";
 import Utils from "libs/JSUtils/Utils";
 import Task from "./Task";
 
-
 const TAG = "TASKROP"
 
 export default class TaskRop

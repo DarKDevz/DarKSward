@@ -4,9 +4,6 @@ import Utils from "libs/JSUtils/Utils";
 import MachMsgHeaderStruct from "./MachMsgHeaderStruct";
 import Task from "./Task";
 
-
-
-
 const TAG = "PORTRIGHTINSERTER";
 
 const TASK_SELF = 0x203;

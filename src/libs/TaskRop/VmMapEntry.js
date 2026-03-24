@@ -24,7 +24,7 @@ export class vm_map_links {
     set end(val) { this.#__view.setBigUint64(this.#__off+0x18, val, true); }
 };
 
-export class vm_map_store {
+class vm_map_store {
     #__mem;
     #__view;
     #__addr;
@@ -142,3 +142,4 @@ export class vm_map_entry {
     get user_wired_count() { return this.#__view.getUint16(this.#__off+0x4e, true); }
     set user_wired_count(val) { this.#__view.setUint16(this.#__off+0x4e, val, true); }
 };
+export default {vm_map_entry,vm_map_links,vm_map_store}

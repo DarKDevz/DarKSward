@@ -1,8 +1,6 @@
 import OffsetsStruct from "libs/Chain/OffsetsStruct";
 import {offsets} from "./OffsetsTable";
 
-
-
 const TAG  = "OFFSETS"
 
 export default class Offsets

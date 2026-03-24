@@ -1,8 +1,6 @@
 import Offsets from "./Offsets";
-import Chain from "libs/Chain/Chain";
 import Utils from "libs/JSUtils/Utils";
-
-
+import Chain from "libs/Chain/Chain";
 
 const TAG = "DRIVER-NEWTHREAD"
 

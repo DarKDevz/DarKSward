@@ -3,8 +3,6 @@ import Utils from "libs/JSUtils/Utils";
 import ThreadState from "./ThreadState";
 import Native from "libs/Chain/Native";
 
-
-
 const AST_GUARD = 0x1000;
 const TAG = "THREAD";
 

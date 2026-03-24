@@ -4,10 +4,6 @@ import ExceptionMessageStruct from "./ExceptionMessageStruct";
 import ExceptionReplyStruct from "./ExceptionReplyStruct";
 import MachMsgHeaderStruct from "./MachMsgHeaderStruct";
 
-
-
-
-
 const TAG = "EXCEPTION";
 
 const MPO_INSERT_SEND_RIGHT = 0x10;

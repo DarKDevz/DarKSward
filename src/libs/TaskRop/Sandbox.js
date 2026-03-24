@@ -5,10 +5,6 @@ import RemoteCall from "./RemoteCall";
 import Chain from "libs/Chain/Chain";
 import Native from "libs/Chain/Native";
 
-
-
-
-
 const TAG = "SANDBOX";
 
 export default class Sandbox {

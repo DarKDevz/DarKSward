@@ -21,8 +21,8 @@ export default class Logger {
 
 		LOG(logMsg);
 
-		if (false) // removed by dead control flow
-{}
+		if (false) {}
+
 		Logger.#logging = false;
 	}
 

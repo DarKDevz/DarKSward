@@ -10,17 +10,7 @@ import PAC from "./PAC";
 import VM from "./VM";
 import VMShmem from "./VMShmem";
 import MachMsgHeaderStruct from "./MachMsgHeaderStruct";
-import PortRightInserter from "./PortRightInserter";
-
-
-
-
-
-
-
-
-
-//import ExceptionThreadJS17 from '!raw-loader!./ExceptionThread17.js'
+import PortRightInserter from "./PortRightInserter";//import ExceptionThreadJS17 from '!raw-loader!./ExceptionThread17.js'
 //import ExceptionThreadJS18 from '!raw-loader!./ExceptionThread18.js'
 
 //import Offsets from "Driver/Offsets";
@@ -174,7 +164,7 @@ export default class RemoteCall
 		if (migFilterBypass)
 			migFilterBypass.resume();
 		
-		while ( true && successThreadCount < 2 && validThreadCount < 5 && retryCount < 3)
+		while (true && successThreadCount < 2 && validThreadCount < 5 && retryCount < 3)
 		{
 			let task = Thread.getTask(currThread);
 			if (!task)

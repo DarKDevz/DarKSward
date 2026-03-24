@@ -2,7 +2,6 @@ import Offsets from "./Offsets";
 import Native from "libs/Chain/Native";
 import Utils from "libs/JSUtils/Utils";
 
-
 const TAG = "DRIVER-POSTEXPL"
 
 export default class DriverPostExpl

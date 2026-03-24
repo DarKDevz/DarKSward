@@ -1,7 +1,6 @@
 import MachMsgHeaderStruct from "./MachMsgHeaderStruct";
 import ThreadState from "./ThreadState";
 
-
 export default class ExceptionMessageStruct 
 {
 	#buffer;

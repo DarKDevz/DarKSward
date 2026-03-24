@@ -71,10 +71,10 @@ const mainConfig = {
           if (!asset) return;
           let originalSource = asset.source();
           const wrappedSource =
-`(() => {
+            `(() => {
 ${indent(headerSource, 2)}
   try {
-\t${originalSource}
+\t  ${originalSource}
   } catch (error) {
 	  LOG(\`Main function resulted with an error: \${error}\`);
 	  LOG("stack: " + error.stack);
@@ -83,7 +83,8 @@ ${indent(headerSource, 2)}
 	  // Exiting the process.
 	  exit(0n);
   }
-})();`;
+})();
+`;
           compilation.assets['bundle.js'] = {
             source: () => wrappedSource,
             size: () => wrappedSource.length,
