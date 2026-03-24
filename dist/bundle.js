@@ -1337,15 +1337,18 @@
   LOG(`[+] kernel_slide: ${mpd_kernel_slide().hex()}`);
   let main = {};
   main.chainData = {
-  	  "chosenOffsets": null
+  	"chosenOffsets": null
   }
   
   try {
-	  /******/ (() => { // webpackBootstrap
+/******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/MigFilterBypassThread.js"
+/*!**************************************!*\
+  !*** ./src/MigFilterBypassThread.js ***!
+  \**************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1357,6 +1360,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ },
 
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/file_downloader.js"
+/*!**********************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/file_downloader.js ***!
+  \**********************************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1368,6 +1374,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ },
 
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/icloud_dumper.js"
+/*!********************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/icloud_dumper.js ***!
+  \********************************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1379,6 +1388,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ },
 
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/keychain_copier.js"
+/*!**********************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/keychain_copier.js ***!
+  \**********************************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1390,6 +1402,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ },
 
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/loader.js"
+/*!*************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/loader.js ***!
+  \*************************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1401,6 +1416,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ },
 
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/wifi_password_dump.js"
+/*!*************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/wifi_password_dump.js ***!
+  \*************************************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1412,6 +1430,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ },
 
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/wifi_password_securityd.js"
+/*!******************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/wifi_password_securityd.js ***!
+  \******************************************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1423,15 +1444,18 @@ __webpack_require__.r(__webpack_exports__);
 /***/ },
 
 /***/ "./src/InjectJS.js"
+/*!*************************!*\
+  !*** ./src/InjectJS.js ***!
+  \*************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ InjectJS)
 /* harmony export */ });
-/* harmony import */ var libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./src/libs/JSUtils/Utils.js");
-/* harmony import */ var libs_TaskRop_RemoteCall__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./src/libs/TaskRop/RemoteCall.js");
-/* harmony import */ var libs_Chain_Chain__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./src/libs/Chain/Chain.js");
+/* harmony import */ var libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! libs/JSUtils/Utils */ "./src/libs/JSUtils/Utils.js");
+/* harmony import */ var libs_TaskRop_RemoteCall__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! libs/TaskRop/RemoteCall */ "./src/libs/TaskRop/RemoteCall.js");
+/* harmony import */ var libs_Chain_Chain__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! libs/Chain/Chain */ "./src/libs/Chain/Chain.js");
 
 
 
@@ -1756,13 +1780,16 @@ class InjectJS {
 /***/ },
 
 /***/ "./src/libs/Chain/Chain.js"
+/*!*********************************!*\
+  !*** ./src/libs/Chain/Chain.js ***!
+  \*********************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Chain)
 /* harmony export */ });
-/* harmony import */ var _JSUtils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./src/libs/JSUtils/Utils.js");
+/* harmony import */ var _JSUtils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../JSUtils/Utils */ "./src/libs/JSUtils/Utils.js");
 
 
 const TAG = "CHAIN"
@@ -1956,6 +1983,9 @@ class Chain
 /***/ },
 
 /***/ "./src/libs/Chain/Native.js"
+/*!**********************************!*\
+  !*** ./src/libs/Chain/Native.js ***!
+  \**********************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2212,6 +2242,9 @@ globalThis.Native = Native;
 /***/ },
 
 /***/ "./src/libs/Chain/OffsetsStruct.js"
+/*!*****************************************!*\
+  !*** ./src/libs/Chain/OffsetsStruct.js ***!
+  \*****************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2320,15 +2353,18 @@ class OffsetsStruct
 /***/ },
 
 /***/ "./src/libs/Driver/Driver.js"
+/*!***********************************!*\
+  !*** ./src/libs/Driver/Driver.js ***!
+  \***********************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ DriverPostExpl)
 /* harmony export */ });
-/* harmony import */ var _Offsets__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./src/libs/Driver/Offsets.js");
-/* harmony import */ var libs_Chain_Native__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./src/libs/Chain/Native.js");
-/* harmony import */ var libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./src/libs/JSUtils/Utils.js");
+/* harmony import */ var _Offsets__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Offsets */ "./src/libs/Driver/Offsets.js");
+/* harmony import */ var libs_Chain_Native__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! libs/Chain/Native */ "./src/libs/Chain/Native.js");
+/* harmony import */ var libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! libs/JSUtils/Utils */ "./src/libs/JSUtils/Utils.js");
 
 
 
@@ -2488,14 +2524,17 @@ class DriverPostExpl
 /***/ },
 
 /***/ "./src/libs/Driver/Offsets.js"
+/*!************************************!*\
+  !*** ./src/libs/Driver/Offsets.js ***!
+  \************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Offsets)
 /* harmony export */ });
-/* harmony import */ var libs_Chain_OffsetsStruct__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./src/libs/Chain/OffsetsStruct.js");
-/* harmony import */ var _OffsetsTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./src/libs/Driver/OffsetsTable.js");
+/* harmony import */ var libs_Chain_OffsetsStruct__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! libs/Chain/OffsetsStruct */ "./src/libs/Chain/OffsetsStruct.js");
+/* harmony import */ var _OffsetsTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./OffsetsTable */ "./src/libs/Driver/OffsetsTable.js");
 
 
 
@@ -2636,6 +2675,9 @@ class Offsets
 /***/ },
 
 /***/ "./src/libs/Driver/OffsetsTable.js"
+/*!*****************************************!*\
+  !*** ./src/libs/Driver/OffsetsTable.js ***!
+  \*****************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3882,6 +3924,9 @@ const offsets = {
 /***/ },
 
 /***/ "./src/libs/JSUtils/FileUtils.js"
+/*!***************************************!*\
+  !*** ./src/libs/JSUtils/FileUtils.js ***!
+  \***************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -4170,6 +4215,9 @@ class FileUtils {
 /***/ },
 
 /***/ "./src/libs/JSUtils/Utils.js"
+/*!***********************************!*\
+  !*** ./src/libs/JSUtils/Utils.js ***!
+  \***********************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -4308,17 +4356,20 @@ class Utils {
 /***/ },
 
 /***/ "./src/libs/TaskRop/Exception.js"
+/*!***************************************!*\
+  !*** ./src/libs/TaskRop/Exception.js ***!
+  \***************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Exception)
 /* harmony export */ });
-/* harmony import */ var libs_Chain_Native__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./src/libs/Chain/Native.js");
-/* harmony import */ var libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./src/libs/JSUtils/Utils.js");
-/* harmony import */ var _ExceptionMessageStruct__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./src/libs/TaskRop/ExceptionMessageStruct.js");
-/* harmony import */ var _ExceptionReplyStruct__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./src/libs/TaskRop/ExceptionReplyStruct.js");
-/* harmony import */ var _MachMsgHeaderStruct__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./src/libs/TaskRop/MachMsgHeaderStruct.js");
+/* harmony import */ var libs_Chain_Native__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! libs/Chain/Native */ "./src/libs/Chain/Native.js");
+/* harmony import */ var libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! libs/JSUtils/Utils */ "./src/libs/JSUtils/Utils.js");
+/* harmony import */ var _ExceptionMessageStruct__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ExceptionMessageStruct */ "./src/libs/TaskRop/ExceptionMessageStruct.js");
+/* harmony import */ var _ExceptionReplyStruct__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ExceptionReplyStruct */ "./src/libs/TaskRop/ExceptionReplyStruct.js");
+/* harmony import */ var _MachMsgHeaderStruct__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./MachMsgHeaderStruct */ "./src/libs/TaskRop/MachMsgHeaderStruct.js");
 
 
 
@@ -4453,14 +4504,17 @@ class Exception
 /***/ },
 
 /***/ "./src/libs/TaskRop/ExceptionMessageStruct.js"
+/*!****************************************************!*\
+  !*** ./src/libs/TaskRop/ExceptionMessageStruct.js ***!
+  \****************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ ExceptionMessageStruct)
 /* harmony export */ });
-/* harmony import */ var _MachMsgHeaderStruct__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./src/libs/TaskRop/MachMsgHeaderStruct.js");
-/* harmony import */ var _ThreadState__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./src/libs/TaskRop/ThreadState.js");
+/* harmony import */ var _MachMsgHeaderStruct__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MachMsgHeaderStruct */ "./src/libs/TaskRop/MachMsgHeaderStruct.js");
+/* harmony import */ var _ThreadState__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ThreadState */ "./src/libs/TaskRop/ThreadState.js");
 
 
 
@@ -4508,14 +4562,17 @@ class ExceptionMessageStruct
 /***/ },
 
 /***/ "./src/libs/TaskRop/ExceptionReplyStruct.js"
+/*!**************************************************!*\
+  !*** ./src/libs/TaskRop/ExceptionReplyStruct.js ***!
+  \**************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ ExceptionReplyStruct)
 /* harmony export */ });
-/* harmony import */ var _MachMsgHeaderStruct__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./src/libs/TaskRop/MachMsgHeaderStruct.js");
-/* harmony import */ var _ThreadState__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./src/libs/TaskRop/ThreadState.js");
+/* harmony import */ var _MachMsgHeaderStruct__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MachMsgHeaderStruct */ "./src/libs/TaskRop/MachMsgHeaderStruct.js");
+/* harmony import */ var _ThreadState__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ThreadState */ "./src/libs/TaskRop/ThreadState.js");
 
 
 
@@ -4547,6 +4604,9 @@ class ExceptionReplyStruct
 /***/ },
 
 /***/ "./src/libs/TaskRop/MachMsgHeaderStruct.js"
+/*!*************************************************!*\
+  !*** ./src/libs/TaskRop/MachMsgHeaderStruct.js ***!
+  \*************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -4588,6 +4648,9 @@ class MachMsgHeaderStruct
 /***/ },
 
 /***/ "./src/libs/TaskRop/PAC.js"
+/*!*********************************!*\
+  !*** ./src/libs/TaskRop/PAC.js ***!
+  \*********************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -4797,17 +4860,20 @@ class PAC
 /***/ },
 
 /***/ "./src/libs/TaskRop/PortRightInserter.js"
+/*!***********************************************!*\
+  !*** ./src/libs/TaskRop/PortRightInserter.js ***!
+  \***********************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ PortRightInserter)
 /* harmony export */ });
-/* harmony import */ var libs_Chain_Native__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./src/libs/Chain/Native.js");
-/* harmony import */ var libs_Chain_Chain__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./src/libs/Chain/Chain.js");
-/* harmony import */ var libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./src/libs/JSUtils/Utils.js");
-/* harmony import */ var _MachMsgHeaderStruct__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./src/libs/TaskRop/MachMsgHeaderStruct.js");
-/* harmony import */ var _Task__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./src/libs/TaskRop/Task.js");
+/* harmony import */ var libs_Chain_Native__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! libs/Chain/Native */ "./src/libs/Chain/Native.js");
+/* harmony import */ var libs_Chain_Chain__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! libs/Chain/Chain */ "./src/libs/Chain/Chain.js");
+/* harmony import */ var libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! libs/JSUtils/Utils */ "./src/libs/JSUtils/Utils.js");
+/* harmony import */ var _MachMsgHeaderStruct__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MachMsgHeaderStruct */ "./src/libs/TaskRop/MachMsgHeaderStruct.js");
+/* harmony import */ var _Task__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Task */ "./src/libs/TaskRop/Task.js");
 
 
 
@@ -5068,6 +5134,9 @@ class PortRightInserter {
 /***/ },
 
 /***/ "./src/libs/TaskRop/RegistersStruct.js"
+/*!*********************************************!*\
+  !*** ./src/libs/TaskRop/RegistersStruct.js ***!
+  \*********************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -5105,25 +5174,28 @@ class RegistersStruct
 /***/ },
 
 /***/ "./src/libs/TaskRop/RemoteCall.js"
+/*!****************************************!*\
+  !*** ./src/libs/TaskRop/RemoteCall.js ***!
+  \****************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ RemoteCall)
 /* harmony export */ });
-/* harmony import */ var libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./src/libs/JSUtils/Utils.js");
-/* harmony import */ var libs_Chain_Native__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./src/libs/Chain/Native.js");
-/* harmony import */ var libs_Chain_Chain__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./src/libs/Chain/Chain.js");
-/* harmony import */ var _Task__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./src/libs/TaskRop/Task.js");
-/* harmony import */ var _Thread__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./src/libs/TaskRop/Thread.js");
-/* harmony import */ var _Exception__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./src/libs/TaskRop/Exception.js");
-/* harmony import */ var _ExceptionMessageStruct__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("./src/libs/TaskRop/ExceptionMessageStruct.js");
-/* harmony import */ var _ThreadState__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("./src/libs/TaskRop/ThreadState.js");
-/* harmony import */ var _PAC__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("./src/libs/TaskRop/PAC.js");
-/* harmony import */ var _VM__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("./src/libs/TaskRop/VM.js");
-/* harmony import */ var _VMShmem__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("./src/libs/TaskRop/VMShmem.js");
-/* harmony import */ var _MachMsgHeaderStruct__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__("./src/libs/TaskRop/MachMsgHeaderStruct.js");
-/* harmony import */ var _PortRightInserter__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__("./src/libs/TaskRop/PortRightInserter.js");
+/* harmony import */ var libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! libs/JSUtils/Utils */ "./src/libs/JSUtils/Utils.js");
+/* harmony import */ var libs_Chain_Native__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! libs/Chain/Native */ "./src/libs/Chain/Native.js");
+/* harmony import */ var libs_Chain_Chain__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! libs/Chain/Chain */ "./src/libs/Chain/Chain.js");
+/* harmony import */ var _Task__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Task */ "./src/libs/TaskRop/Task.js");
+/* harmony import */ var _Thread__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Thread */ "./src/libs/TaskRop/Thread.js");
+/* harmony import */ var _Exception__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Exception */ "./src/libs/TaskRop/Exception.js");
+/* harmony import */ var _ExceptionMessageStruct__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ExceptionMessageStruct */ "./src/libs/TaskRop/ExceptionMessageStruct.js");
+/* harmony import */ var _ThreadState__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ThreadState */ "./src/libs/TaskRop/ThreadState.js");
+/* harmony import */ var _PAC__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./PAC */ "./src/libs/TaskRop/PAC.js");
+/* harmony import */ var _VM__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./VM */ "./src/libs/TaskRop/VM.js");
+/* harmony import */ var _VMShmem__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./VMShmem */ "./src/libs/TaskRop/VMShmem.js");
+/* harmony import */ var _MachMsgHeaderStruct__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./MachMsgHeaderStruct */ "./src/libs/TaskRop/MachMsgHeaderStruct.js");
+/* harmony import */ var _PortRightInserter__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./PortRightInserter */ "./src/libs/TaskRop/PortRightInserter.js");
 
 
 
@@ -6246,18 +6318,21 @@ class RemoteCall
 /***/ },
 
 /***/ "./src/libs/TaskRop/Sandbox.js"
+/*!*************************************!*\
+  !*** ./src/libs/TaskRop/Sandbox.js ***!
+  \*************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Sandbox)
 /* harmony export */ });
-/* harmony import */ var libs_JSUtils_FileUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./src/libs/JSUtils/FileUtils.js");
-/* harmony import */ var libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./src/libs/JSUtils/Utils.js");
-/* harmony import */ var _Task__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./src/libs/TaskRop/Task.js");
-/* harmony import */ var _RemoteCall__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./src/libs/TaskRop/RemoteCall.js");
-/* harmony import */ var libs_Chain_Chain__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./src/libs/Chain/Chain.js");
-/* harmony import */ var libs_Chain_Native__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./src/libs/Chain/Native.js");
+/* harmony import */ var libs_JSUtils_FileUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! libs/JSUtils/FileUtils */ "./src/libs/JSUtils/FileUtils.js");
+/* harmony import */ var libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! libs/JSUtils/Utils */ "./src/libs/JSUtils/Utils.js");
+/* harmony import */ var _Task__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Task */ "./src/libs/TaskRop/Task.js");
+/* harmony import */ var _RemoteCall__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./RemoteCall */ "./src/libs/TaskRop/RemoteCall.js");
+/* harmony import */ var libs_Chain_Chain__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! libs/Chain/Chain */ "./src/libs/Chain/Chain.js");
+/* harmony import */ var libs_Chain_Native__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! libs/Chain/Native */ "./src/libs/Chain/Native.js");
 
 
 
@@ -6698,6 +6773,9 @@ class Sandbox {
 /***/ },
 
 /***/ "./src/libs/TaskRop/SelfTaskStruct.js"
+/*!********************************************!*\
+  !*** ./src/libs/TaskRop/SelfTaskStruct.js ***!
+  \********************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -6754,16 +6832,19 @@ class SelfTaskStruct
 /***/ },
 
 /***/ "./src/libs/TaskRop/Task.js"
+/*!**********************************!*\
+  !*** ./src/libs/TaskRop/Task.js ***!
+  \**********************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Task)
 /* harmony export */ });
-/* harmony import */ var _SelfTaskStruct__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./src/libs/TaskRop/SelfTaskStruct.js");
-/* harmony import */ var libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./src/libs/JSUtils/Utils.js");
-/* harmony import */ var libs_Chain_Chain__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./src/libs/Chain/Chain.js");
-/* harmony import */ var libs_Chain_Native__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./src/libs/Chain/Native.js");
+/* harmony import */ var _SelfTaskStruct__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SelfTaskStruct */ "./src/libs/TaskRop/SelfTaskStruct.js");
+/* harmony import */ var libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! libs/JSUtils/Utils */ "./src/libs/JSUtils/Utils.js");
+/* harmony import */ var libs_Chain_Chain__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! libs/Chain/Chain */ "./src/libs/Chain/Chain.js");
+/* harmony import */ var libs_Chain_Native__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! libs/Chain/Native */ "./src/libs/Chain/Native.js");
 
 
 
@@ -7024,15 +7105,18 @@ class Task
 /***/ },
 
 /***/ "./src/libs/TaskRop/TaskRop.js"
+/*!*************************************!*\
+  !*** ./src/libs/TaskRop/TaskRop.js ***!
+  \*************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ TaskRop)
 /* harmony export */ });
-/* harmony import */ var _Chain_Chain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./src/libs/Chain/Chain.js");
-/* harmony import */ var _JSUtils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./src/libs/JSUtils/Utils.js");
-/* harmony import */ var _Task__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./src/libs/TaskRop/Task.js");
+/* harmony import */ var _Chain_Chain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Chain/Chain */ "./src/libs/Chain/Chain.js");
+/* harmony import */ var _JSUtils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../JSUtils/Utils */ "./src/libs/JSUtils/Utils.js");
+/* harmony import */ var _Task__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Task */ "./src/libs/TaskRop/Task.js");
 
 
 
@@ -7058,16 +7142,19 @@ class TaskRop
 /***/ },
 
 /***/ "./src/libs/TaskRop/Thread.js"
+/*!************************************!*\
+  !*** ./src/libs/TaskRop/Thread.js ***!
+  \************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Thread)
 /* harmony export */ });
-/* harmony import */ var _Chain_Chain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./src/libs/Chain/Chain.js");
-/* harmony import */ var _JSUtils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./src/libs/JSUtils/Utils.js");
-/* harmony import */ var _Chain_Native__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./src/libs/Chain/Native.js");
-/* harmony import */ var _ThreadState__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./src/libs/TaskRop/ThreadState.js");
+/* harmony import */ var _Chain_Chain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Chain/Chain */ "./src/libs/Chain/Chain.js");
+/* harmony import */ var _JSUtils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../JSUtils/Utils */ "./src/libs/JSUtils/Utils.js");
+/* harmony import */ var _Chain_Native__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Chain/Native */ "./src/libs/Chain/Native.js");
+/* harmony import */ var _ThreadState__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ThreadState */ "./src/libs/TaskRop/ThreadState.js");
 
 
 
@@ -7260,13 +7347,16 @@ class Thread
 /***/ },
 
 /***/ "./src/libs/TaskRop/ThreadState.js"
+/*!*****************************************!*\
+  !*** ./src/libs/TaskRop/ThreadState.js ***!
+  \*****************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ ThreadState)
 /* harmony export */ });
-/* harmony import */ var _RegistersStruct__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./src/libs/TaskRop/RegistersStruct.js");
+/* harmony import */ var _RegistersStruct__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./RegistersStruct */ "./src/libs/TaskRop/RegistersStruct.js");
 
 
 class ThreadState
@@ -7336,20 +7426,23 @@ class ThreadState
 /***/ },
 
 /***/ "./src/libs/TaskRop/VM.js"
+/*!********************************!*\
+  !*** ./src/libs/TaskRop/VM.js ***!
+  \********************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ VM)
 /* harmony export */ });
-/* harmony import */ var libs_Chain_Chain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./src/libs/Chain/Chain.js");
-/* harmony import */ var libs_Chain_Native__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./src/libs/Chain/Native.js");
-/* harmony import */ var libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./src/libs/JSUtils/Utils.js");
-/* harmony import */ var _VmMapEntry__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./src/libs/TaskRop/VmMapEntry.js");
-/* harmony import */ var _Task__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./src/libs/TaskRop/Task.js");
-/* harmony import */ var _VMObject__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./src/libs/TaskRop/VMObject.js");
-/* harmony import */ var _VMShmem__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("./src/libs/TaskRop/VMShmem.js");
-/* harmony import */ var _VmPackingParams__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("./src/libs/TaskRop/VmPackingParams.js");
+/* harmony import */ var libs_Chain_Chain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! libs/Chain/Chain */ "./src/libs/Chain/Chain.js");
+/* harmony import */ var libs_Chain_Native__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! libs/Chain/Native */ "./src/libs/Chain/Native.js");
+/* harmony import */ var libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! libs/JSUtils/Utils */ "./src/libs/JSUtils/Utils.js");
+/* harmony import */ var _VmMapEntry__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./VmMapEntry */ "./src/libs/TaskRop/VmMapEntry.js");
+/* harmony import */ var _Task__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Task */ "./src/libs/TaskRop/Task.js");
+/* harmony import */ var _VMObject__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./VMObject */ "./src/libs/TaskRop/VMObject.js");
+/* harmony import */ var _VMShmem__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./VMShmem */ "./src/libs/TaskRop/VMShmem.js");
+/* harmony import */ var _VmPackingParams__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./VmPackingParams */ "./src/libs/TaskRop/VmPackingParams.js");
 
 
 
@@ -7716,6 +7809,9 @@ class VM
 /***/ },
 
 /***/ "./src/libs/TaskRop/VMObject.js"
+/*!**************************************!*\
+  !*** ./src/libs/TaskRop/VMObject.js ***!
+  \**************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -7768,6 +7864,9 @@ class VMObject
 /***/ },
 
 /***/ "./src/libs/TaskRop/VMShmem.js"
+/*!*************************************!*\
+  !*** ./src/libs/TaskRop/VMShmem.js ***!
+  \*************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -7812,6 +7911,9 @@ class VMShmem
 /***/ },
 
 /***/ "./src/libs/TaskRop/VmMapEntry.js"
+/*!****************************************!*\
+  !*** ./src/libs/TaskRop/VmMapEntry.js ***!
+  \****************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -7968,6 +8070,9 @@ class vm_map_entry {
 /***/ },
 
 /***/ "./src/libs/TaskRop/VmPackingParams.js"
+/*!*********************************************!*\
+  !*** ./src/libs/TaskRop/VmPackingParams.js ***!
+  \*********************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -8039,6 +8144,12 @@ class VmPackingParams
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
+/******/ 		if (!(moduleId in __webpack_modules__)) {
+/******/ 			delete __webpack_module_cache__[moduleId];
+/******/ 			var e = new Error("Cannot find module '" + moduleId + "'");
+/******/ 			e.code = 'MODULE_NOT_FOUND';
+/******/ 			throw e;
+/******/ 		}
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
@@ -8076,23 +8187,28 @@ class VmPackingParams
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
+// This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
+(() => {
+/*!*********************!*\
+  !*** ./src/main.js ***!
+  \*********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var libs_Chain_Native__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./src/libs/Chain/Native.js");
-/* harmony import */ var libs_Chain_Chain__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./src/libs/Chain/Chain.js");
-/* harmony import */ var libs_TaskRop_TaskRop__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./src/libs/TaskRop/TaskRop.js");
-/* harmony import */ var libs_TaskRop_Task__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./src/libs/TaskRop/Task.js");
-/* harmony import */ var libs_TaskRop_Sandbox__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./src/libs/TaskRop/Sandbox.js");
-/* harmony import */ var libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./src/libs/JSUtils/Utils.js");
-/* harmony import */ var _InjectJS__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("./src/InjectJS.js");
-/* harmony import */ var libs_Driver_Driver__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("./src/libs/Driver/Driver.js");
-/* harmony import */ var libs_TaskRop_RemoteCall__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("./src/libs/TaskRop/RemoteCall.js");
-/* harmony import */ var _MigFilterBypassThread__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("./src/MigFilterBypassThread.js");
-/* harmony import */ var _raw_loader_loader__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("./node_modules/raw-loader/dist/cjs.js!./src/loader.js");
-/* harmony import */ var _raw_loader_file_downloader__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__("./node_modules/raw-loader/dist/cjs.js!./src/file_downloader.js");
-/* harmony import */ var _raw_loader_keychain_copier__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__("./node_modules/raw-loader/dist/cjs.js!./src/keychain_copier.js");
-/* harmony import */ var _raw_loader_wifi_password_dump__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__("./node_modules/raw-loader/dist/cjs.js!./src/wifi_password_dump.js");
-/* harmony import */ var _raw_loader_wifi_password_securityd__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__("./node_modules/raw-loader/dist/cjs.js!./src/wifi_password_securityd.js");
-/* harmony import */ var _raw_loader_icloud_dumper__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__("./node_modules/raw-loader/dist/cjs.js!./src/icloud_dumper.js");
+/* harmony import */ var libs_Chain_Native__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! libs/Chain/Native */ "./src/libs/Chain/Native.js");
+/* harmony import */ var libs_Chain_Chain__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! libs/Chain/Chain */ "./src/libs/Chain/Chain.js");
+/* harmony import */ var libs_TaskRop_TaskRop__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! libs/TaskRop/TaskRop */ "./src/libs/TaskRop/TaskRop.js");
+/* harmony import */ var libs_TaskRop_Task__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! libs/TaskRop/Task */ "./src/libs/TaskRop/Task.js");
+/* harmony import */ var libs_TaskRop_Sandbox__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! libs/TaskRop/Sandbox */ "./src/libs/TaskRop/Sandbox.js");
+/* harmony import */ var libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! libs/JSUtils/Utils */ "./src/libs/JSUtils/Utils.js");
+/* harmony import */ var _InjectJS__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./InjectJS */ "./src/InjectJS.js");
+/* harmony import */ var libs_Driver_Driver__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! libs/Driver/Driver */ "./src/libs/Driver/Driver.js");
+/* harmony import */ var libs_TaskRop_RemoteCall__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! libs/TaskRop/RemoteCall */ "./src/libs/TaskRop/RemoteCall.js");
+/* harmony import */ var _MigFilterBypassThread__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./MigFilterBypassThread */ "./src/MigFilterBypassThread.js");
+/* harmony import */ var _raw_loader_loader__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! !raw-loader!loader */ "./node_modules/raw-loader/dist/cjs.js!./src/loader.js");
+/* harmony import */ var _raw_loader_file_downloader__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! !raw-loader!./file_downloader */ "./node_modules/raw-loader/dist/cjs.js!./src/file_downloader.js");
+/* harmony import */ var _raw_loader_keychain_copier__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! !raw-loader!./keychain_copier */ "./node_modules/raw-loader/dist/cjs.js!./src/keychain_copier.js");
+/* harmony import */ var _raw_loader_wifi_password_dump__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! !raw-loader!./wifi_password_dump */ "./node_modules/raw-loader/dist/cjs.js!./src/wifi_password_dump.js");
+/* harmony import */ var _raw_loader_wifi_password_securityd__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! !raw-loader!./wifi_password_securityd */ "./node_modules/raw-loader/dist/cjs.js!./src/wifi_password_securityd.js");
+/* harmony import */ var _raw_loader_icloud_dumper__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! !raw-loader!./icloud_dumper */ "./node_modules/raw-loader/dist/cjs.js!./src/icloud_dumper.js");
 
 
 
@@ -8214,7 +8330,7 @@ class MigFilterBypass {
         libs_Chain_Native__WEBPACK_IMPORTED_MODULE_0__["default"].write64(this.#monitorThread2Ptr, thread2);
     }
 }
-function main_xnuVersion() {
+function xnuVersion() {
     libs_Chain_Native__WEBPACK_IMPORTED_MODULE_0__["default"].callSymbol("uname", libs_Chain_Native__WEBPACK_IMPORTED_MODULE_0__["default"].mem);
     const release = libs_Chain_Native__WEBPACK_IMPORTED_MODULE_0__["default"].readString(libs_Chain_Native__WEBPACK_IMPORTED_MODULE_0__["default"].mem + 0x200n, 0x100);
     let splittedVersion = release.split(".");
@@ -8230,7 +8346,7 @@ const targetProcess = "SpringBoard";
 function start() {
     let mutexPtr = null;
     let migFilterBypass = null;
-    globalThis.xnuVersion = main_xnuVersion();
+    globalThis.xnuVersion = xnuVersion();
     let ver = globalThis.xnuVersion;
 
     // If iOS >= 18.4 we apply migbypass in order to bypass autobox restrictions
@@ -8341,14 +8457,17 @@ catch (error) {
 finally {
     libs_Chain_Native__WEBPACK_IMPORTED_MODULE_0__["default"].callSymbol("exit", 0n);
 }
+
+})();
+
 /******/ })()
 ;
   } catch (error) {
-      LOG(`Main function resulted with an error: ${error}`);
-      LOG("stack: " + error.stack);
+	  LOG(`Main function resulted with an error: ${error}`);
+	  LOG("stack: " + error.stack);
   } finally {
-      // Post-Exp done.
-      // Exiting the process.
-      exit(0n);
+	  // Post-Exp done.
+	  // Exiting the process.
+	  exit(0n);
   }
 })();

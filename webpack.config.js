@@ -7,11 +7,13 @@ module.exports = {
   mode: 'production',
   context: __dirname,
   entry: './src/main.js',
-  target: ['web', 'es6'],
+  devtool: false,
+  target: 'web',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
     iife: true,
+    pathinfo: true,
     environment: {
       arrowFunction: true,
       const: true,
@@ -42,18 +44,18 @@ module.exports = {
 
           let originalSource = asset.source();
 
-          const wrappedSource = 
+          const wrappedSource =
 `(() => {
 ${indent(headerSource, 2)}
   try {
-\t  ${originalSource}
+${originalSource}
   } catch (error) {
-      LOG(\`Main function resulted with an error: \${error}\`);
-      LOG("stack: " + error.stack);
+	  LOG(\`Main function resulted with an error: \${error}\`);
+	  LOG("stack: " + error.stack);
   } finally {
-      // Post-Exp done.
-      // Exiting the process.
-      exit(0n);
+	  // Post-Exp done.
+	  // Exiting the process.
+	  exit(0n);
   }
 })();`;
 
@@ -66,12 +68,12 @@ ${indent(headerSource, 2)}
     },
   ],
   optimization: {
+    avoidEntryIife: false,
     minimize: false,
     moduleIds: 'named',
     chunkIds: 'named',
     concatenateModules: false,
-    mangleExports: false,
+    sideEffects: false,
     usedExports: false,
-    providedExports: true,
   },
 };

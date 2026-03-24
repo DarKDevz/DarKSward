@@ -1336,5 +1336,5 @@ LOG(`[+] kernel_base: ${mpd_kernel_base().hex()}`);
 LOG(`[+] kernel_slide: ${mpd_kernel_slide().hex()}`);
 let main = {};
 main.chainData = {
-	  "chosenOffsets": null
+	"chosenOffsets": null
 }
