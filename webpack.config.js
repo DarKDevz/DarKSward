@@ -5,15 +5,19 @@ const indent = (str, spaces = 2) => str.split('\n').map(line => ' '.repeat(space
 
 module.exports = {
   mode: 'production',
-  // Keep context at root so it sees 'src' as a subdirectory for the path string
-  context: __dirname, 
+  context: __dirname,
   entry: './src/main.js',
+  target: ['web', 'es6'],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    iife: true,
+    environment: {
+      arrowFunction: true,
+      const: true,
+    },
   },
   resolve: {
-    // Alias 'libs' specifically to the subfolder to trigger the comment metadata
     alias: {
       libs: path.resolve(__dirname, 'src/libs')
     },
@@ -22,17 +26,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-            plugins: ['@babel/plugin-proposal-class-properties']
-          }
-        }
-      },
       {
         test: /MigFilterBypassThread\.js$/,
         use: 'raw-loader',
@@ -45,9 +38,11 @@ module.exports = {
         compiler.hooks.emit.tap('WrapPlugin', (compilation) => {
           const headerSource = fs.readFileSync(path.resolve(__dirname, 'src/header.js'), 'utf8');
           const asset = compilation.assets['bundle.js'];
-          const originalSource = asset.source();
+          if (!asset) return;
 
-          const wrappedSource =
+          let originalSource = asset.source();
+
+          const wrappedSource = 
 `(() => {
 ${indent(headerSource, 2)}
   try {
@@ -56,6 +51,8 @@ ${indent(headerSource, 2)}
       LOG(\`Main function resulted with an error: \${error}\`);
       LOG("stack: " + error.stack);
   } finally {
+      // Post-Exp done.
+      // Exiting the process.
       exit(0n);
   }
 })();`;
@@ -70,11 +67,11 @@ ${indent(headerSource, 2)}
   ],
   optimization: {
     minimize: false,
-    namedModules: true,
-    namedChunks: true,
+    moduleIds: 'named',
+    chunkIds: 'named',
     concatenateModules: false,
+    mangleExports: false,
     usedExports: false,
     providedExports: true,
-    sideEffects: false
   },
 };
