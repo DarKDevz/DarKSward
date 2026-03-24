@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "raw-loader": "^4.0.2",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^7.0.2"
+  }
+}

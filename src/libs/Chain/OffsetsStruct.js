@@ -1,0 +1,98 @@
+const OFFSET_KERNEL_BASE  = 0xfffffff007004000n
+//const OFFSET_KERNEL_TASK  = 0x925770n // iOS 17.5.1 - iPhone 13/13 pro max
+//const OFFSET_KERNEL_TASK 0x91d318 // iOS 17.4.1 - iPhone 13 pro max
+const OFFSET_KERNEL_TASK = 0x0n
+const OFFSET_TASK_MAP = 0x28n
+const OFFSET_TASK_NEXT = 0x30n
+const OFFSET_TASK_PREV = 0x38n
+const OFFSET_TASK_THREADS = 0x58n
+const OFFSET_TASK_IPC_SPACE = 0x300n
+const OFFSET_TASK_PROC_RO = 0x3a0n
+const OFFSET_TASK_PROC_SIZE = 0x740n // iOS 17.5.1
+const OFFSET_TASK_EXC_GUARD = 0x5d4n
+
+const OFFSET_IPC_SPACE_TABLE = 0x20n
+const OFFSET_IPC_ENTRY_OBJECT =	0x0n
+const OFFSET_IPC_OBJECT_KOBJECT = 0x48n
+const OFFSET_IPC_PORT_IP_NSREQUEST = 0x58n
+const OFFSET_IPC_PORT_IP_SORIGHTS = 0x84n
+
+const OFFSET_PROC_PID = 0x60n
+const OFFSET_PROC_P_COMM = 0x568n
+
+const OFFSET_THREAD_OPTIONS = 0x70n
+const OFFSET_THREAD_KSTACKPTR = 0xf0n
+const OFFSET_THREAD_ROP_PID = 0x160n
+const OFFSET_THREAD_JOP_PID = 0x168n
+const OFFSET_THREAD_GUARD_EXC_CODE = 0x330n
+const OFFSET_THREAD_TASK_THREADS = 0x370n
+const OFFSET_THREAD_TRO = 0x380n
+const OFFSET_THREAD_AST = 0x3a4n
+const OFFSET_THREAD_MUTEX_DATA = 0x3b0n
+const OFFSET_THREAD_CTID = 0x430n
+
+const OFFSET_TRO_TASK = 0x20n
+
+const OFFSET_VM_HDR_RBH_ROOT = 0x38n
+const OFFSET_VM_RBE_LEFT = 0x0n
+const OFFSET_VM_RBE_RIGHT = 0x8n
+
+const OFFSET_VM_OBJECT_VOU_SIZE = 0x18n
+const OFFSET_VM_OBJECT_REF_COUNT = 0x28n
+
+const OFFSET_VM_NAMED_ENTRY_COPY = 0x10n
+const OFFSET_VM_NAMED_ENTRY_NEXT = 0x20n
+
+const OFFSET_MIG_LOCK = 0x0n;
+const OFFSET_MIG_SBXMSG = 0x0n;
+export default class OffsetsStruct
+{
+	constructor() {
+		this.baseKernel = OFFSET_KERNEL_BASE;
+		this.kernelTask = OFFSET_KERNEL_TASK;
+		this.T1SZ_BOOT = 17n;
+
+		this.mapTask = OFFSET_TASK_MAP;
+		this.nextTask = OFFSET_TASK_NEXT;
+		this.prevTask = OFFSET_TASK_PREV;
+		this.threads = OFFSET_TASK_THREADS;
+		this.ipcSpace = OFFSET_TASK_IPC_SPACE;
+		this.procRO = OFFSET_TASK_PROC_RO;
+		this.procSize = OFFSET_TASK_PROC_SIZE;
+		this.excGuard = OFFSET_TASK_EXC_GUARD;
+
+		this.spaceTable = OFFSET_IPC_SPACE_TABLE;
+		this.entryObject = OFFSET_IPC_ENTRY_OBJECT;
+		this.objectKObject = OFFSET_IPC_OBJECT_KOBJECT;
+		this.ipNsRequest = OFFSET_IPC_PORT_IP_NSREQUEST;
+		this.ipSorights = OFFSET_IPC_PORT_IP_SORIGHTS;
+
+		this.pid = OFFSET_PROC_PID;
+		this.pComm = OFFSET_PROC_P_COMM;
+
+		this.options = OFFSET_THREAD_OPTIONS;
+		this.kstackptr = OFFSET_THREAD_KSTACKPTR;
+		this.ropPid = OFFSET_THREAD_ROP_PID;
+		this.jopPid = OFFSET_THREAD_JOP_PID;
+		this.guardExcCode = OFFSET_THREAD_GUARD_EXC_CODE;
+		this.taskThreads = OFFSET_THREAD_TASK_THREADS;
+		this.tro = OFFSET_THREAD_TRO;
+		this.ast = OFFSET_THREAD_AST;
+		this.mutexData = OFFSET_THREAD_MUTEX_DATA;
+		this.ctid = OFFSET_THREAD_CTID;
+
+		this.troTask = OFFSET_TRO_TASK;
+
+		this.hdrRBHRoot = OFFSET_VM_HDR_RBH_ROOT;
+		this.rbeLeft = OFFSET_VM_RBE_LEFT;
+		this.rbeRight = OFFSET_VM_RBE_RIGHT;
+
+		this.vouSize = OFFSET_VM_OBJECT_VOU_SIZE;
+		this.refCount = OFFSET_VM_OBJECT_REF_COUNT;
+
+		this.backingCopy = OFFSET_VM_NAMED_ENTRY_COPY;
+		this.next = OFFSET_VM_NAMED_ENTRY_NEXT;
+		this.migLock = OFFSET_MIG_LOCK;
+		this.migSbxMsg = OFFSET_MIG_SBXMSG;
+	}
+}
