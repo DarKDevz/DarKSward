@@ -5,13 +5,18 @@ const indent = (str, spaces = 2) => str.split('\n').map(line => ' '.repeat(space
 
 module.exports = {
   mode: 'production',
-  context: path.resolve(__dirname, 'src'),
-  entry: './main.js',
+  // Keep context at root so it sees 'src' as a subdirectory for the path string
+  context: __dirname, 
+  entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
   resolve: {
+    // Alias 'libs' specifically to the subfolder to trigger the comment metadata
+    alias: {
+      libs: path.resolve(__dirname, 'src/libs')
+    },
     modules: [path.resolve(__dirname, 'src'), 'node_modules'],
     extensions: ['.js']
   },
