@@ -35,6 +35,8 @@ const commonConfig = {
   },
 };
 
+//This is the only way to remove the warnings
+//Threat actors have to have used this. there is no other way.
 const removeMissingModuleGuardPlugin = {
   apply: (compiler) => {
     compiler.hooks.compilation.tap('RemoveMissingModuleGuard', (compilation) => {
@@ -81,13 +83,11 @@ const migConfig = {
   },
   optimization: {
     ...commonConfig.optimization,
-    innerGraph: false,
-    providedExports: false,
+    innerGraph: false, //<------- Needed for dumpKMEM to show the correct libs
+    providedExports: false, //<--- same as ^
   },
   plugins: [removeMissingModuleGuardPlugin],
 };
-
-console.log('migConfig optimization:', migConfig.optimization);
 
 const mainConfig = {
   ...commonConfig,
