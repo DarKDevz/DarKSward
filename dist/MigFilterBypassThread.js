@@ -2595,7 +2595,6 @@ class Logger {
 
 		if (false) // removed by dead control flow
 {}
-
 		Logger.#logging = false;
 	}
 
@@ -2603,6 +2602,7 @@ class Logger {
 		libs_Chain_Native__WEBPACK_IMPORTED_MODULE_1__["default"].callSymbol("unlink", Logger.#logfile);
 	}
 }
+
 
 /***/ }),
 
@@ -3459,12 +3459,6 @@ class ThreadState
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		if (!(moduleId in __webpack_modules__)) {
-/******/ 			delete __webpack_module_cache__[moduleId];
-/******/ 			var e = new Error("Cannot find module '" + moduleId + "'");
-/******/ 			e.code = 'MODULE_NOT_FOUND';
-/******/ 			throw e;
-/******/ 		}
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
@@ -3519,8 +3513,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var libs_JSUtils_Logger__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! libs/JSUtils/Logger */ "./src/libs/JSUtils/Logger.js");
 /* harmony import */ var libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! libs/JSUtils/Utils */ "./src/libs/JSUtils/Utils.js");
 /* harmony import */ var libs_Driver_DriverNewThread__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! libs/Driver/DriverNewThread */ "./src/libs/Driver/DriverNewThread.js");
-
-
 
 
 

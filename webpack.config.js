@@ -20,7 +20,7 @@ const commonConfig = {
     moduleIds: 'named',
     chunkIds: 'named',
     concatenateModules: false,
-    sideEffects: false,
+    sideEffects: true,
     usedExports: false,
   },
   output: {
@@ -35,6 +35,39 @@ const commonConfig = {
   },
 };
 
+const removeMissingModuleGuardPlugin = {
+  apply: (compiler) => {
+    compiler.hooks.compilation.tap('RemoveMissingModuleGuard', (compilation) => {
+      const hooks = require('webpack/lib/javascript/JavascriptModulesPlugin').getCompilationHooks(compilation);
+      hooks.renderRequire.tap('RemoveMissingModuleGuard', (code) => {
+        // Remove the MODULE_NOT_FOUND guard block + trailing empty /******/ line
+        code = code.replace(
+          /if \(!\(moduleId in __webpack_modules__\)\) \{[\s\S]*?throw e;\s*\}\n/,
+          ''
+        );
+        // Remove unused pure expression dead code
+        code = code.replace(
+          /\/\* unused pure expression or super \*\/ null && \([^)]*\)\);/g,
+          ''
+        );
+        return code;
+      });
+      hooks.renderModuleContent.tap('RemoveDeadCode', (moduleSource) => {
+        const source = moduleSource.source();
+        if (!source.includes('unused pure expression or super')) return moduleSource;
+        const { ReplaceSource } = require('webpack-sources');
+        const newSource = new ReplaceSource(moduleSource);
+        const regex = /\(\/\* unused pure expression or super \*\/ null && \(([^)]*)\)\)/g; let match;
+        while ((match = regex.exec(source)) !== null) {
+          newSource.replace(match.index, match.index + match[0].length - 1, match[1]);
+        }
+        return newSource;
+      });
+    });
+  },
+};
+
+
 const migConfig = {
   ...commonConfig,
   name: 'mig',
@@ -43,6 +76,7 @@ const migConfig = {
     ...commonConfig.output,
     filename: 'MigFilterBypassThread.js',
   },
+  plugins: [removeMissingModuleGuardPlugin]
 };
 
 const mainConfig = {
@@ -62,7 +96,7 @@ const mainConfig = {
       },
     ],
   },
-  plugins: [
+  plugins: [removeMissingModuleGuardPlugin,
     {
       apply: (compiler) => {
         compiler.hooks.emit.tap('WrapPlugin', (compilation) => {

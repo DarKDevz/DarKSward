@@ -22,7 +22,6 @@ export default class Logger {
 		LOG(logMsg);
 
 		if (false) {}
-
 		Logger.#logging = false;
 	}
 

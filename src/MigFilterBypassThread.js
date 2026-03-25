@@ -7,8 +7,6 @@ import Logger from "libs/JSUtils/Logger";
 import Utils from "libs/JSUtils/Utils";
 import DriverNewThread from "libs/Driver/DriverNewThread";
 
-
-
 const TAG = "MIG_FILTER_BYPASS";
 
 const RUN_FLAG_STOP = 0;
