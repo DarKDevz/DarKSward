@@ -1,3 +1,0 @@
--correct path being taken by each script (./src and not ./libs)
--raw-loader fix for the InjectJS modules
--compilation for InjectJS modules
