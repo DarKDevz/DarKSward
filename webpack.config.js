@@ -75,9 +75,19 @@ const migConfig = {
   output: {
     ...commonConfig.output,
     filename: 'MigFilterBypassThread.js',
+    library: {
+      type: 'commonjs',
+    },
   },
-  plugins: [removeMissingModuleGuardPlugin]
+  optimization: {
+    ...commonConfig.optimization,
+    innerGraph: false,
+    providedExports: false,
+  },
+  plugins: [removeMissingModuleGuardPlugin],
 };
+
+console.log('migConfig optimization:', migConfig.optimization);
 
 const mainConfig = {
   ...commonConfig,
