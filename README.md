@@ -2,7 +2,7 @@
 
 Webpack source code reconstruction of the DarkSword iOS exploit chain (REFERENCE ONLY)
 
-[diff]: https://github.com/DarKDevz/DarKSward/tree/main/media/diff.png "Compiled with no-changes"
+![diff,diff,diff](https://raw.githubusercontent.com/DarKDevz/DarKSward/refs/heads/main/media/diff.png)
 
 If you diff the files, MigFilterBypassThread.js will show as changed, its purely cosmetical, the threat actors probably just compiled it before changing the rest of the code to use libs/ instead of ../
 
