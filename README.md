@@ -9,5 +9,3 @@ If you diff the files, MigFilterBypassThread.js will show as changed, its purely
 Reference: https://cloud.google.com/blog/topics/threat-intelligence/darksword-ios-exploit-chain
 
 I'm not interested in the RU/UA politics, sloppy tradecraft results in exploits being found.
-
-contact me in telegram for any questions: @darknullbyte 
